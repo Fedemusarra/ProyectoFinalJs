@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sitio web de mi tienda en el que encontrarás ropa de la mejor calidad, las ultimas tendencias, temporada verano, invierno, productos de sale, y contacto">
+    <meta name="keywords" content="ROPA,, MODA, TEMPORADA, SALE, VERANO, INVIERNO">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../assets/newlogo.jpg">
+    <!-- Bootstrap CSS/JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--CSS Propio-->
+    <link rel="stylesheet" type="text/css" href="../STYLE/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title> Black Outfitters</title>
+</head>
+
+<body class="body__back">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> <img src="../ASSETS/newlogo.jpg" id="logo" /> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"> <span
+					class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px width: 100%">
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						M  e  n  u
+					</a>
+                        <!--Menu Dropdown Categorias-->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../HTML/productos.html">Todos los productos</a></li>
+                            <li>
+
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"></a>
+                        </li>
+                </ul>
+
+                <div id="msjHola" class="msjHola"></div>
+                <a class="navbar-brand" id="carroLogo" href="../HTML/micuenta.html"> <img src="../ASSETS/carro.png" alt="miCuenta" width="30" height="28" /> </a>
+                <a class="navbar-brand" href="../HTML/login.html"> <img src="../ASSETS/cuenta.jpg" alt="LogIn" width="30" height="28" /> </a>
+                <a class="navbar-brand" href="../HTML/contacto.html"> <img src="../ASSETS/contacto.jpg" alt="Contacto" width="30" height="28" /> </a>
+            </div>
+        </div>
+    </nav>
+    <!--NavBar Responsive-->
+    <nav class="navbar navbar-dark bg-dark fixed-top navbarResp">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../ASSETS/newlogo.jpg" id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								M  e  n  u
+							</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../HTML/productos.html">Todos los productos</a></li>
+                                <li>
+
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"></a>
+                            </li>
+                    </ul>
+
+                    <div id="msjHola" class="msjHola"></div>
+                    <a class="navbar-brand" id="carroLogo" href="../HTML/micuenta.html"> <img src="../ASSETS/carro.png" alt="miCuenta" width="30" height="28" /> </a>
+                    <a class="navbar-brand" href="../HTML/login.html"> <img src="../ASSETS/cuenta.jpg" alt="LogIn" width="30" height="28" /> </a>
+                    <a class="navbar-brand" href="../HTML/contacto.html"> <img src="../ASSETS/contacto.jpg" alt="Contacto" width="30" height="28" /> </a>
+                </div>
+            </div>
+        </div>
+    </nav><br><br>
+    <!-- Barra Pagos -->
+    <div class="logospie">
+        <span>  </span>
+        <span><img src="../ASSETS/visa_gris.svg" alt="Visa"></span>
+        <span><img src="../ASSETS/mastercard_gris.svg" alt="Mastercard"></span>
+        <span><img src="../ASSETS/americalexpress_gris.svg" alt="American Express"></span>
+        <span>  </span>
+    </div>
+    <hr>
+    <div>
+
+        <!--BOTON FLOTANTE WP-->
+        <div class="btn-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=5199999999" target="_blank">
+                <img src="../ASSETS/botonwp.png" alt="wpbtn">
+            </a>
+        </div>
+        <!--Fin Flotante-->
+
+        <aside id="carrito" class="col-sm-4 carritoHome">
+            <table id="lista-carrito">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="carritoTbody"></tbody>
+            </table>
+            <a href="../HTML/micuenta.html"><button class="btn-outline-secondary btn--animate animate__animated botonVaciar">Finalizar compra</button></a>
+        </aside>
+        <br/>
+        <!--INFORMATICA-->
+        <div id="listaProductos">
+            <div class="row">
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="1"><img src="../ASSETS/camisa.jpg" class="card-img-top card-img-trans" alt="imagen "></a>
+                            <h3><a>Camisa Reagan</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">4750</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="2"><img src="../ASSETS/pantalon.jpg" class="card-img-top card-img-trans" alt="imagen "></a>
+                            <h3><a>Pantalon kylie</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">8700</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="3"></a><img src="../ASSETS/jean.jpg" class="card-img-top" alt="imagen ">
+                            <h3><a>jean stacy malibu</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">7500</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="4"><img src="../ASSETS/top.jpg" class="card-img-top card-img-trans" alt="imagen "></a>
+                            <h3><a>Top pisimo</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">2250</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="5"></a><img src="../ASSETS/poleron.jpg" class="card-img-top" alt="imagen ">
+                            <h3><a>Poleron</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">4400</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="6"></a><img src="../ASSETS/outlet2.jpeg" class="card-img-top" alt="imagen ">
+                            <h3><a>Pantalon charlie brown</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">6232</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="7"></a><img src="../ASSETS/outlet1.jpeg" class="card-img-top" alt="imagen ">
+                            <h3><a>polera neck</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">2204</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="8"></a><img src="../ASSETS/outlet3.jpeg" class="card-img-top" alt="imagen ">
+                            <h3><a>remera strauss</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Precio:</label>
+                            <h6 class="card-title price-mob">1547</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="9"></a><img src="../ASSETS/boxer.jpg" class="card-img-top" alt="imagen ">
+                            <h3><a>Boxer pañalero</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Stock:</label>
+                            <h6 class="card-title price-mob">1100</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="10"></a><img src="../ASSETS/bermudaJ.jpg" class="card-img-top" alt="imagen ">
+                            <h3><a>Bermuda jean</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Stock:</label>
+                            <h6 class="card-title price-mob">4500</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="11"></a><img src="../ASSETS/bermuda.jpg" class="card-img-top" alt="imagen ">
+                            <h3><a>Bermuda black</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Stock:</label>
+                            <h6 class="card-title price-mob">3210</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 cols-md-auto">
+                    <div class="card card-body-inform">
+                        <div class="card-body">
+                            <a href="#" data-id="11"></a><img src="../ASSETS/musculosa.jpg" class="card-img-top" alt="imagen ">
+                            <h3><a>musculosa skinny</a></h3>
+                            <p class="card-text">Todos los talles</p>
+                            <label>Stock:</label>
+                            <h6 class="card-title price-mob">10000</h6>
+                            <a href="#" class="btn btn-primary btn--animate animate__animated agregar-carrito">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+        <hr>
+        <!-- SERVICES SECTION-->
+        <section class="py-5">
+            <div class="container py-4">
+                <div class="row gy-4">
+                    <div class="row">
+                        <div class="col-md-4 footer-col">
+                            <img src="../ASSETS/entrega.png" alt=" Envio">
+                            <h6><strong>ENVÍOS GRATIS </strong> </h6>
+                            <p> PARA COMPRAS DE MÁS DE $800 </p>
+                        </div>
+
+
+                        <div class="col-md-4 footer-col">
+                            <i class="fal fa-credit-card"></i>
+                            <img src="../ASSETS/TC.png" alt=" TC">
+                            <h6><strong>HASTA 3 CUOTAS SIN INTERÉS</strong> </h6>
+                            <p> CON TODAS LAS TARJETAS DE CRÉDITO </p>
+                        </div>
+
+
+                        <div class="col-md-4 footer-col" style="justify-content: space-evenly">
+                            <i class="fal fa-credit-card"></i>
+                            <img src="../ASSETS/$.png" alt=" $">
+                            <h6><strong>15% OFF</strong> </h6>
+                            <p> ABONANDO EN SHOWROOM </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer>
+            <nav class="navbar">
+                <div class="container animate__animated">
+                    <a class="navbar-brand " href="http://www.instagram.com" target="_blank"> <img src="../ASSETS/iglogo.jpg" alt="Instagram" /> </a>
+                    <a class="navbar-brand" href="http://www.twitter.com" target="_blank"> <img src="../ASSETS/ttlogo.jpg" alt="Twitter" /> </a>
+                    <a class="navbar-brand" href="../index.html"> <img src="../ASSETS/homelogo.jpg" alt="Home" /> </a>
+                    <a class="navbar-brand" href="http://www.youtube.com" target="_blank"> <img src="../ASSETS/ytlogo.jpg" alt="Youtube" /> </a>
+                    <a class="navbar-brand" href="http://www.facebook.com" target="_blank"> <img src="../ASSETS/fblogo.jpg" alt="Facebook" /> </a>
+                </div>
+            </nav>
+        </footer>
+        <script src="../JS/script.js"></script>
+</body>
+
+</html>
