@@ -18,7 +18,7 @@
     </script>
 
     <!-- Logo Miniatura-->
-    <link rel="shortcut icon" href="ASSETS/newlogo.jpg">
+    <link rel="shortcut icon" href="ASSETS/logochico.png">
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="STYLE/style.css" />
@@ -30,7 +30,7 @@
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="ASSETS/newlogo.jpg" id="logo"  alt="" class="d-inline-block align-text-top" /> </a>
+            <a class="navbar-brand" href="index.html"> <img src="ASSETS/logochico.png" id="logo"  alt="" class="d-inline-block align-text-top" /> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"> <span
 					class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
@@ -78,36 +78,35 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item dropdown">
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                            </form>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                          <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 M  e  n  u
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-
-                                <li class="nav-item"> <a class="nav-link active" aria-current="HTML/page" href="HTML/productos.html">Outlet</a>
-                                </li>
-                                <hr class="dropdown-divider">
-                                <li class="nav-item">
-                                    <a class="navbar-brand" id="carroLogo" href="HTML/micuenta.html"> <img src="ASSETS/carro.png" alt="miCuenta" width="26" height="24" /> </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="HTML/login.html"> <img src="ASSETS/cuenta.jpg" alt="LogIn" width="26" height="24" /> </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="HTML/contacto.html"> <img src="ASSETS/contacto.jpg" alt="Contacto" width="26" height="24" /> </a>
-                                </li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="HTML/productos.html">Todos los productos</a></li>
                             </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=" "> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=" "> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href=" "> </a>
+                        </li>
+                    </ul>
+    
+                    <div>
+                        <div id="msjHola" class="msjHola"></div>
+                        <a class="navbar-brand" id="carroLogo" href="HTML/micuenta.html"> <img src="ASSETS/carro.png" alt="miCuenta" width="30" height="28" /> </a>
+                        <a class="navbar-brand" href="HTML/login.html"> <img src="ASSETS/cuenta.jpg" alt="LogIn" width="30" height="28" /> </a>
+                        <a class="navbar-brand" href="HTML/contacto.html"> <img src="ASSETS/contacto.jpg" alt="Contacto" width="30" height="28" /> </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
+    
+        </nav>
 
     <!-- Barra Pagos -->
     <div class="logospie">
@@ -122,7 +121,7 @@
     <!--Banner-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active"> <img src="ASSETS/bannerLogo.png" class="d-block w-100" alt="banner intel" height="600px" /> </div>
+            <div class="carousel-item active"> <img src="ASSETS/fondoindex.gif" class="d-block w-100" alt="banner intel" height="600px" /> </div>
             <div class="carousel-item"> <img src="ASSETS/banner3.png" class="d-block w-100" alt="banner intel" height="600px" /> </div>
         </div>
         <!--Controles Carrousel-->
@@ -132,40 +131,26 @@
 				class="visually-hidden">Siguiente</span> </button>
     </div>
     <hr>
-
-    <!-- SERVICES SECTION-->
-    <section class="py-5">
-        <div class="container py-4">
-            <div class="row gy-4">
-                <div class="row">
-                    <div class="col-md-4 footer-col">
-                        <img src="ASSETS/entrega.png" alt=" Envio">
-                        <h6><strong>ENVÍOS GRATIS </strong> </h6>
-                        <p> PARA COMPRAS DE MÁS DE $800 </p>
-                    </div>
-
-
-                    <div class="col-md-4 footer-col">
-                        <i class="fal fa-credit-card"></i>
-                        <img src="ASSETS/TC.png" alt=" TC">
-                        <h6><strong>HASTA 3 CUOTAS SIN INTERÉS</strong> </h6>
-                        <p> CON TODAS LAS TARJETAS DE CRÉDITO </p>
-                    </div>
-
-
-                    <div class="col-md-4 footer-col" style="justify-content: space-evenly">
-                        <i class="fal fa-credit-card"></i>
-                        <img src="ASSETS/$.png" alt=" $">
-                        <h6><strong>15% OFF</strong> </h6>
-                        <p> ABONANDO EN SHOWROOM </p>
+    <!--Clima-->
+    <section class="py-1 bg-fixed bg-cover bg-center dark-overlay">
+        <div class="overlay-content">
+            <div class="container py-1 text-black-50 text-center">
+                <div class=" mb-2 text-center text-lg-center">
+                    <div class="col-12">
+                        <div class="content__container">
+                            <h2> El tiempo hoy 🌡️ </h2><br>
+                        </div>
+                        <div id="city"></div>
+                        <div id="temp"></div>
+                        <div id="hum"></div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
-    <hr>
+        <hr>
 
+    </section>
+    
     <!--BOTON FLOTANTE WP-->
     <div class="btn-whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5199999999" target="_blank">
@@ -322,7 +307,7 @@
                     <div class=" mb-2 text-center text-lg-center">
                         <div class="col-12">
                             <div class="content__container">
-                                <h2> ❤️ O U T L E T ❤️ </h2>
+                                <h2> ❤️ U L T I M A S ❤️ </h2>
                             </div>
                         </div>
                     </div>
@@ -379,29 +364,40 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
+ 
     <hr>
-    <!--Clima-->
-    <section class="py-1 bg-fixed bg-cover bg-center dark-overlay">
-        <div class="overlay-content">
-            <div class="container py-1 text-black-50 text-center">
-                <div class=" mb-2 text-center text-lg-center">
-                    <div class="col-12">
-                        <div class="content__container">
-                            <h2> El tiempo hoy 🌡️ </h2><br>
-                        </div>
-                        <div id="city"></div>
-                        <div id="temp"></div>
-                        <div id="hum"></div>
+       <!-- Info-->
+       <section class="py-5">
+        <div class="container py-4">
+            <div class="row gy-4">
+                <div class="row">
+                    <div class="col-md-4 footer-col">
+                        <img src="ASSETS/entrega.png" alt=" Envio">
+                        <h6><strong>ENVÍOS GRATIS </strong> </h6>
+                        <p> PARA COMPRAS DE MÁS DE $800 </p>
+                    </div>
+
+
+                    <div class="col-md-4 footer-col">
+                        <i class="fal fa-credit-card"></i>
+                        <img src="ASSETS/TC.png" alt=" TC">
+                        <h6><strong>HASTA 3 CUOTAS SIN INTERÉS</strong> </h6>
+                        <p> CON TODAS LAS TARJETAS DE CRÉDITO </p>
+                    </div>
+
+
+                    <div class="col-md-4 footer-col" style="justify-content: space-evenly">
+                        <i class="fal fa-credit-card"></i>
+                        <img src="ASSETS/$.png" alt=" $">
+                        <h6><strong>15% OFF</strong> </h6>
+                        <p> ABONANDO EN SHOWROOM </p>
                     </div>
                 </div>
+
             </div>
         </div>
-        <hr>
-
     </section>
-    
+
     <!--Footer-->
     <footer>
         <nav class="navbar">

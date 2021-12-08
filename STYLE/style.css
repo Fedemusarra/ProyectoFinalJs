@@ -49,7 +49,7 @@ body {
 .borrarProd {
     padding: 3px 5px 3px 5px;
     border-radius: 50%;
-    background-color: rgb(209, 17, 17);
+    background-color: rgb(231, 57, 57);
     color: white;
     font-size: 11px;
     list-style: none;
@@ -412,13 +412,6 @@ h2 {
 }
 
 
-/*PAGINA CATEGORIAS*/
-
-.bodyimgCateg {
-    background-image: url(../ASSETS/workflow-line.png);
-    background-repeat: repeat;
-}
-
 
 /*ANIMACION BOTONES*/
 
@@ -439,7 +432,7 @@ h2 {
     text-decoration: none;
     -webkit-transition: all ease 1s;
     transition: all ease 1s;
-    background: #274ece;
+    background: #64394d;
 }
 
 .btn--animate:after {
@@ -499,63 +492,18 @@ h2 {
 }
 
 
-/*CARDS CATEGORIAS*/
 
-.card-img-top {
-    height: 100%;
-}
-
-.card-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    text-align: center;
-}
-
-.card {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 1;
-    cursor: pointer;
-}
-
-.card:hover {
-    -webkit-filter: none;
-    filter: none;
-    cursor: pointer;
-}
-
-.card-body-inform {
-    -webkit-filter: none;
-    filter: none;
-}
-
-.card-body-inform img:hover {
-    -webkit-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-    -webkit-filter: none;
-    filter: none;
-}
 
 
 /*PAGINA REGISTRO*/
 
 .registroLink {
-    color: rgb(247, 166, 166);
+    color: rgb(29, 27, 27);
 }
 
 .registroLink a {
-    color: rgb(184, 147, 171);
-    text-decoration: none;
+    color: rgb(94, 135, 189);
+    text-decoration: underline;
 }
 
 .registro {

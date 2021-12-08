@@ -30,34 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-//API
-
-function obtenerDatos() {
-
-    let url = `https://ws.smn.gob.ar/map_items/weather`;
-
-    const api = new XMLHttpRequest();
-    api.open('GET', url, true);
-    api.send();
-
-    api.onreadystatechange = function() {
-
-        if (this.status == 200 && this.readyState == 4) {
-
-            let datos = JSON.parse(this.responseText);
-            let datosBA = datos[56];
-            console.log(datosBA);
-            let city = document.querySelector('#city');
-            let temp = document.querySelector('#temp');
-            let hum = document.querySelector('#hum');
-            city.innerHTML = `<p>Ciudad: ${datosBA.name}</p>`;
-            temp.innerHTML = `<p>Temperatura: ${datosBA.weather.temp}</p>`
-            hum.innerHTML = `<p>Humedad: ${datosBA.weather.humidity}%</p>`
-        }
-
-    }
-
-}
 
 function vaciaCarrito() {
     productosCarrito = [];
@@ -149,75 +121,32 @@ function limpiarHTML() {
 
 
 
-//API//
+//API
 
-//localizar geograficamente donde se encuentra el cliente//
+function obtenerDatos() {
 
+    let url = `https://ws.smn.gob.ar/map_items/weather`;
 
+    const api = new XMLHttpRequest();
+    api.open('GET', url, true);
+    api.send();
 
-$(document).ready(function() {
+    api.onreadystatechange = function() {
 
-    let geoLoc = navigator.geolocation.getCurrentPosition(mostrarGeo);
+        if (this.status == 200 && this.readyState == 4) {
 
-
-    function mostrarGeo(position) {
-
-        console.log(position);
-
-        let lat = position.coords.latitude;
-        let long = position.coords.longitude;
-
-        console.log("latitud: " + lat);
-        console.log("Long: " + long);
-
-        geoFinal(lat, long);
+            let datos = JSON.parse(this.responseText);
+            let datosBA = datos[56];
+            console.log(datosBA);
+            let city = document.querySelector('#city');
+            let temp = document.querySelector('#temp');
+            let hum = document.querySelector('#hum');
+            city.innerHTML = `<p>Ciudad: ${datosBA.name}</p>`;
+            temp.innerHTML = `<p>Temperatura: ${datosBA.weather.temp}</p>`
+            hum.innerHTML = `<p>Humedad: ${datosBA.weather.humidity}%</p>`
+        }
 
     }
 
-})
-
-
-
-//Agregar el clima segun la ubicacion exacta del cliente//
-
-function geoFinal(lat, long) {
-
-    $.ajax({
-
-        url: `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=8ae405df7ea5fbdf016b4ca92b7720bc`,
-        type: `GET`,
-        data: {
-            appid: `8ae405df7ea5fbdf016b4ca92b7720bc`,
-            dataType: `jsonp`,
-            units: `metric`,
-            lang: `es`,
-
-        },
-        success: function(data) {
-
-
-            console.log(data);
-            let icono = data.weather[0].icon;
-            let iconoURL = "http://openweathermap.org/img/w/" + icono + ".png";
-
-            $("#icono").attr("src", iconoURL);
-            let clima = `<div id="cajaClima2">
-                             <p id="climaCiudad"><b>${data.name}</b></p> 
-                                            
-                             <img src= "${iconoURL}"></img>                            
-                             <p>TEMP: ${data.main.temp} °C   </p>
-                             <p>.    ${data.weather[0].description}</p>     
-                            
-
-                        </div>`;
-
-
-            $("#caja").append(clima);
-
-
-
-        },
-
-
-    })
 }
+// FIN API
